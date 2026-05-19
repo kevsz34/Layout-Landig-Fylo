@@ -291,10 +291,10 @@ color: var(--blue-300);
     max-height: 48px;
 }
 #inputEmail{
-    color: #C0C0C0;
+
    padding: 0 32px 0 32px;
     border-radius: 40px;
-    width: 480px;
+    width: 50%;
     border: none;
     height: 48px;
 }
@@ -303,13 +303,14 @@ form button{
     display: flex;
     justify-content: center;
     font-weight: bold;
+    cursor: pointer;
     font-family: var(--font-heading);
     color: #FFFFFF;
     border: none;
     background: var(--gradient);
     align-items: center;
     padding: 24px;
-    width: 47%;
+    max-width: 47%;
     height: 48px;
    border-radius: 40px;
 }
@@ -317,14 +318,16 @@ form button:hover{
     background: var(--blue-250);
 }
 .errorEmail{
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     position: absolute;
    color: var(--red-500);
     bottom: 30px;
     left:100px;
 }
 .displayBlock{
-display: block;
+visibility: visible;
+opacity: 1;
 }
 footer{
     display: flex;
@@ -359,6 +362,9 @@ footer img{
 #place img{
     max-width: 12px;
     max-height: 20px;
+}
+#place p{
+    width: 45%;
 }
 #numberEmail{
   display: flex;
@@ -405,6 +411,9 @@ color: #FFFFFF;
     width: 35px;
     height: 33px;
 }
+
+
+
 @media(max-width: 600px){
      #background {
         height: 90%;
@@ -525,6 +534,11 @@ color: #FFFFFF;
     border: none;
     min-height: 48px;
 }
+.errorEmail{
+    bottom: 20px;
+    font-size: 13px;
+    left: 20px;
+}
 form button{
 
    width: 280px;
@@ -548,6 +562,8 @@ footer{
 max-width: 279px;
 }
 #containerBottom{
+    display: flex;
+    gap: 50px;
     flex-direction: column;
 }
 #menuFooter{
@@ -557,6 +573,7 @@ max-width: 279px;
     gap: 16px;
 }
 #socials{
+    padding-top: 100px;
     align-self: center;
 }
 }
@@ -646,6 +663,10 @@ form button{
 #numberEmail{
      grid-column: 2;
     grid-row: 1;
+}
+.errorEmail{
+    bottom: 82px;
+    left: 70px;
 }
 #menuFooter{
     max-width: 300px;
